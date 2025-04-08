@@ -1,0 +1,40 @@
+.image-box {
+  border-radius: 23px;
+  background-color: green;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .image-box {
+    width: 95%;
+  }
+}
+.image-text {
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  margin: 40px auto 20px;
+  justify-content: center;
+  color: 999999;
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.button-design {
+  background-color: black;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
