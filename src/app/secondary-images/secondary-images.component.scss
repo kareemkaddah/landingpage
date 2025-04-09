@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 850px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.image {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  max-width: 100%;
+  width: 400px;
+  height: 356px;
+  border-radius: 32px;
+  border-radius: 50px;
+  border-radius: 48px;
+
+  box-shadow: -10px 10px 20px #b3b3b3, 10px -10px 20px #dfdfdf;
+}
+@media (max-width: 600px) {
+  .image {
+    width: 95%;
+  }
+}
+
+.text {
+  flex: 1; /* This will ensure text takes the remaining space */
+  color: black;
+  font-size: 1.5rem;
+}
+.image-left {
+  order: 1; /* Position image on the left */
+}
+.image-right {
+  order: 2; /* Position image on the right */
+}
+.reverse .image-left {
+  order: 2; /* When reverse class is added, image moves to the right */
+}
+
+.reverse .image-right {
+  order: 1; /* When reverse class is added, text moves to the left */
+}

@@ -1,0 +1,8 @@
+<div class="faq-wrapper">
+  @for (item of faqList; track item.question) {
+  <app-questions
+    [question]="item.question"
+    [answer]="item.answer"
+  ></app-questions>
+  }
+</div>

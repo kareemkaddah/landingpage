@@ -59,12 +59,14 @@
     flex-direction: column;
   }
   .second-section {
-    background-color: #f7f7f7;
+    background-color: #40ff00;
     padding: 100px 0;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
+
   main {
     width: 100%;
     margin-bottom: 30px;
@@ -94,12 +96,18 @@
     align-items: center;
     display: flex;
   }
+  #message-animation {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 </style>
 
 <section class="hero-section">
   <main>
     <h1>Welcome To the Landing Page!</h1>
   </main>
+
   <div class="main-image">
     <app-image-box
       buttonText="Get Started"
@@ -117,13 +125,23 @@
   <main>
     <h1>Welcome To the Landing Page!</h1>
   </main>
-  <div class="main-image">
-    <app-image-box
-      imageDiscription="this is the discriotion of the image"
-      buttonText="Get Started"
-    ></app-image-box>
+
+  <app-secondary-images
+    firstHeading="First tilte"
+    firstDiscription="This is the First Discription of the image"
+    secondHeading="Second title"
+    secondDiscription="This is the Second Discription of the Image"
+  ></app-secondary-images>
+</section>
+
+<section class="hero-section">
+  <div id="message-animation" style="width: 600px; height: 400px"></div>
+  <main>
+    <h1>FAQ!</h1>
+  </main>
+  <div class="faq">
+    <app-faq></app-faq>
   </div>
-  <div></div>
 </section>
 
 <router-outlet />

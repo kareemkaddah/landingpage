@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="question" style="margin-top: 50px">
+    <h1 (click)="toggleAnswer()">{{ question }}</h1>
+
+    <div class="answer">
+      @if (showAnswer) {
+      <p>{{ answer }}</p>
+      }
+    </div>
+  </div>
+</div>

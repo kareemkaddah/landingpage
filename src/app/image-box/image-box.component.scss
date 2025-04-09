@@ -1,14 +1,17 @@
 .image-box {
   border-radius: 23px;
-  background-color: green;
+  background-color: #40ff00;
   align-items: center;
   display: flex;
   justify-content: center;
-  display: flex;
+
   width: 80%;
   max-width: 800px;
   aspect-ratio: 16/9;
   margin: 0 auto;
+  border-radius: 50px;
+
+  box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
 @media (max-width: 600px) {
   .image-box {
